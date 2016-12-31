@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <string>
 #include <locale>
-#include <codecvt>
+//#include <codecvt>
 
 
 namespace ucat {
@@ -25,15 +25,15 @@ struct PinyinConfig {
 
 class Pinyin {
 public:
+/*
     parse(const std::string & str, const PinyinConfig & conf) {
         std::wstring_convert<std::codecvt_utf8_utf16<utf16_t>, wchar_t> wchar_conv;
     }
 
     parse(const std::wstring & str, const PinyinConfig & conf) {
-
     }
-private:
-    std::string hz2py(const std::wstring & hz) {
+*/
+    std::string string2pinyin(const std::wstring & hz) {
         // 我们考虑的词大小为4个汉字即可
         std::string py;
 
